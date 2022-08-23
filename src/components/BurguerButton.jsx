@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-function BurguerButton() {
+function BurguerButton(props) {
   return (
     <Burguer>
-      <div className="icon nav-icon-5">
+      <div onClick={props.handleClick} className={`icon nav-icon-5 ${props.click ? 'open' : ''}`}>
         <span></span>
         <span></span>
         <span></span>
